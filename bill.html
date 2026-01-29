@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>บิลออเดอร์</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadBill()">
+
+<div class="bill" id="printArea">
+<h2>🧾 ใบเสร็จรับเงิน</h2>
+
+<p id="info"></p>
+<ul id="list"></ul>
+
+<h3>รวมทั้งหมด: <span id="total"></span> บาท</h3>
+
+<button onclick="window.print()">🖨️ พิมพ์ใบเสร็จ</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

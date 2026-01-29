@@ -1,0 +1,99 @@
+body{
+font-family:sans-serif;
+margin:0;
+background:#fff3e0;
+}
+
+/* หน้า Welcome */
+.center{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.welcome-card{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px #0003;
+text-align:center;
+width:500px;
+}
+
+.profile{
+width:90px;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+/* ปุ่ม */
+button{
+background:#ff9800;
+color:white;
+border:none;
+padding:10px 25px;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#fb8c00;
+}
+
+/* หน้าเลือกอาหาร */
+.title{
+text-align:center;
+margin-top:20px;
+}
+
+.menu{
+background:white;
+width:800px;
+margin:30px auto;
+padding:30px;
+border-radius:15px;
+box-shadow:0 4px 15px #0002;
+}
+
+.menu h2{
+border-bottom:2px solid #ffcc80;
+padding-bottom:5px;
+}
+
+.item{
+display:grid;
+grid-template-columns: 1fr 40px 60px 40px;
+align-items:center;
+gap:10px;
+margin:10px 0;
+font-size:16px;
+}
+
+input{
+width:60px;
+text-align:center;
+padding:5px;
+}
+
+/* ใบเสร็จ */
+.bill{
+background:white;
+width:400px;
+margin:50px auto;
+padding:30px;
+border-radius:15px;
+box-shadow:0 4px 15px #0003;
+text-align:left;
+}
+
+.bill h2{
+text-align:center;
+}
+
+/* ซ่อนปุ่มตอนพิมพ์ */
+@media print{
+button{display:none;}
+body{background:white;}
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>สั่งอาหาร</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">เลือกเมนูอาหาร</h1>
+
+<div class="menu">
+
+<h2>🍗 ไก่</h2>
+<div class="item">ไก่ทอด 60 <button onclick="minus('c1')">-</button><input id="c1" value="0"><button onclick="plus('c1')">+</button></div>
+<div class="item">ไก่ย่าง 70 <button onclick="minus('c2')">-</button><input id="c2" value="0"><button onclick="plus('c2')">+</button></div>
+
+<h2>🍛 จานเดียว</h2>
+<div class="item">ข้าวผัด 50 <button onclick="minus('c3')">-</button><input id="c3" value="0"><button onclick="plus('c3')">+</button></div>
+<div class="item">กะเพรา 60 <button onclick="minus('c4')">-</button><input id="c4" value="0"><button onclick="plus('c4')">+</button></div>
+
+<h2>🥗 ยำ</h2>
+<div class="item">ยำวุ้นเส้น 70 <button onclick="minus('c5')">-</button><input id="c5" value="0"><button onclick="plus('c5')">+</button></div>
+
+<h2>🍲 แกง / ต้มยำ</h2>
+<div class="item">ต้มยำ 80 <button onclick="minus('c6')">-</button><input id="c6" value="0"><button onclick="plus('c6')">+</button></div>
+<div class="item">แกงเขียวหวาน 70 <button onclick="minus('c7')">-</button><input id="c7" value="0"><button onclick="plus('c7')">+</button></div>
+
+<h2>🥤 น้ำ</h2>
+<div class="item">ชาเย็น 30 <button onclick="minus('c8')">-</button><input id="c8" value="0"><button onclick="plus('c8')">+</button></div>
+<div class="item">น้ำเปล่า 15 <button onclick="minus('c9')">-</button><input id="c9" value="0"><button onclick="plus('c9')">+</button></div>
+
+<label>ชื่อผู้สั่ง</label>
+<input id="name">
+
+<label>เบอร์โทร</label>
+<input id="phone">
+
+<button onclick="submitOrder()">สั่งอาหาร</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
